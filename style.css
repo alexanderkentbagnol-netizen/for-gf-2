@@ -1,0 +1,368 @@
+/* =======================
+   GENERAL
+======================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(180deg,#3E1B8A,#6A4CFF,#B388FF);
+    min-height:100vh;
+    color:white;
+    overflow-x:hidden;
+}
+
+.page{
+    display:none;
+    min-height:100vh;
+    padding:30px 20px;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.page.active{
+    display:flex;
+}
+
+/* =======================
+   FLOATING HEARTS
+======================= */
+
+#hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:-1;
+}
+
+/* =======================
+   GLASS CARD
+======================= */
+
+.glass{
+    width:100%;
+    max-width:360px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(14px);
+    padding:35px 25px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.glass h1{
+    font-size:55px;
+}
+
+.glass h2{
+    margin-top:10px;
+    font-size:30px;
+}
+
+.glass p{
+    margin:18px 0;
+    line-height:1.7;
+}
+
+/* =======================
+   INPUT
+======================= */
+
+input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    outline:none;
+    margin-top:15px;
+    font-size:16px;
+}
+
+/* =======================
+   BUTTON
+======================= */
+
+button{
+
+    margin-top:20px;
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:white;
+
+    color:#6A4CFF;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* =======================
+   ERROR
+======================= */
+
+#error{
+
+    color:#FFD6D6;
+
+    margin-top:15px;
+
+}
+
+/* =======================
+   WELCOME
+======================= */
+
+.container{
+
+    max-width:420px;
+
+}
+
+.title{
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
+}
+
+.message{
+
+    line-height:2;
+
+    font-size:17px;
+
+    background:rgba(255,255,255,.12);
+
+    padding:25px;
+
+    border-radius:25px;
+
+}
+
+/* =======================
+   SECTION TITLE
+======================= */
+
+.sectionTitle{
+
+    font-size:32px;
+
+    margin-bottom:30px;
+
+}
+
+/* =======================
+   GALLERY
+======================= */
+
+.gallery{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    margin-bottom:30px;
+
+}
+
+.photoCard{
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:22px;
+
+    color:#444;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.2);
+
+    transform:rotate(-2deg);
+
+}
+
+.photoCard:nth-child(even){
+
+    transform:rotate(2deg);
+
+}
+
+.photoCard img{
+
+    width:100%;
+
+    border-radius:18px;
+
+}
+
+.photoCard p{
+
+    margin-top:15px;
+
+    font-weight:500;
+
+}
+
+/* =======================
+   LETTER
+======================= */
+
+.letter{
+
+    max-width:420px;
+
+    background:white;
+
+    color:#444;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    line-height:2;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+
+.letter h2{
+
+    color:#6A4CFF;
+
+    margin-bottom:20px;
+
+}
+
+/* =======================
+   ENDING
+======================= */
+
+.ending{
+
+    max-width:420px;
+
+}
+
+.ending h1{
+
+    font-size:70px;
+
+    animation:beat 1s infinite;
+
+}
+
+.ending h2{
+
+    margin-top:15px;
+
+    font-size:34px;
+
+}
+
+.ending p{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    line-height:2;
+
+}
+
+.ending h3{
+
+    margin-top:40px;
+
+    font-size:22px;
+
+}
+
+/* =======================
+   HEART BEAT
+======================= */
+
+@keyframes beat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* =======================
+   MOBILE
+======================= */
+
+@media(max-width:480px){
+
+    .title{
+
+        font-size:30px;
+
+    }
+
+    .sectionTitle{
+
+        font-size:28px;
+
+    }
+
+    .message{
+
+        font-size:16px;
+
+    }
+
+    button{
+
+        font-size:16px;
+
+    }
+
+  }
