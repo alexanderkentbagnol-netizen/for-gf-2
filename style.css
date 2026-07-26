@@ -366,3 +366,98 @@ button:hover{
     }
 
   }
+
+/* Slide animation base */
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+/* Cute animations */
+
+.fade {
+    animation: fade 1s ease;
+}
+
+.zoom {
+    animation: zoom 1s ease;
+}
+
+.bounce {
+    animation: bounce 1s ease;
+}
+
+.slide-left {
+    animation: slideLeft 1s ease;
+}
+
+.rotate {
+    animation: rotate 1s ease;
+}
+
+
+/* Animation effects */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes zoom {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(-10deg) scale(.8);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}
