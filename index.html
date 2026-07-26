@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Bella 💜</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+<div id="hearts"></div>
+
+<!-- ================= PASSWORD PAGE ================= -->
+
+<section id="loginPage" class="page active">
+
+    <div class="glass">
+
+        <h1>💜</h1>
+
+        <h2>For Bella</h2>
+
+        <p>
+            This little place was made only for you.
+        </p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Password">
+
+        <button onclick="checkPassword()">
+            Unlock ❤️
+        </button>
+
+        <p id="error"></p>
+
+    </div>
+
+</section>
+
+<!-- ================= WELCOME PAGE ================= -->
+
+<section id="welcomePage" class="page">
+
+    <div class="container">
+
+        <h1 class="title">
+            Hi Bella 💜
+        </h1>
+
+        <p class="message">
+            If you're reading this...
+
+            it means you unlocked a tiny piece of my heart.
+
+            I wanted to create something that you could always come back to whenever you miss us.
+
+            Every photo, every word, and every little detail here reminds me how lucky I am to have someone as wonderful as you.
+
+            Thank you for always making me smile.
+
+            I love you so much.
+
+            ❤️
+        </p>
+
+        <button onclick="nextSection('galleryPage')">
+            Continue 🌸
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section id="galleryPage" class="page">
+
+    <h2 class="sectionTitle">
+        Our Memories 📸
+    </h2>
+
+    <div class="gallery">
+
+        <div class="photoCard">
+
+            <img src="images/pic1.jpg">
+
+            <p>
+                Every picture of you becomes my favorite.
+            </p>
+
+        </div>
+
+        <div class="photoCard">
+
+            <img src="images/pic2.jpg">
+
+            <p>
+                You always make my heart smile.
+            </p>
+
+        </div>
+
+        <div class="photoCard">
+
+            <img src="images/pic3.jpg">
+
+            <p>
+                You're the prettiest girl in my eyes.
+            </p>
+
+        </div>
+
+    </div>
+
+    <button onclick="nextSection('letterPage')">
+        Read My Letter 💌
+    </button>
+
+</section>
+
+<!-- ================= LOVE LETTER ================= -->
+
+<section id="letterPage" class="page">
+
+    <div class="letter">
+
+        <h2>To My Bella 💜</h2>
+
+        <p>
+
+            Thank you for coming into my life.
+
+            Thank you for every laugh.
+
+            Every late-night conversation.
+
+            Every little memory.
+
+            Every hug.
+
+            Every smile.
+
+            I know I'm not perfect,
+
+            but every day I try to become a better person because of you.
+
+            I hope this tiny website reminds you
+
+            that no matter where life takes us...
+
+            you'll always be someone incredibly special to me.
+
+            I love you.
+
+            More than words can explain.
+
+            ❤️
+
+        </p>
+
+    </div>
+
+    <button onclick="nextSection('endingPage')">
+        One Last Thing...
+    </button>
+
+</section>
+
+<!-- ================= ENDING ================= -->
+
+<section id="endingPage" class="page">
+
+    <div class="ending">
+
+        <h1>❤️</h1>
+
+        <h2>I Will Always Choose You</h2>
+
+        <p>
+
+            Again.
+
+            And again.
+
+            And again.
+
+        </p>
+
+        <h3>
+
+            Happy Anniversary
+
+            05 • 31 • 25
+
+        </h3>
+
+        <button onclick="showHearts()">
+
+            Tap Me 💜
+
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
